@@ -1,0 +1,235 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(214, 29%, 36%);
+    --White: hsl(0, 0%, 100%);
+}
+*{/*Variable mundial para resetear nuestro front*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Con esto mantenemos nuestras dimensiones*/
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    background-color: var(--Very-dark-blue);
+}
+.card{
+    border: 1px solid red; /*Ver las dimensiones de la tarjeta*/
+    background-color: var(--Very-dark-blue2);
+    width:344px; /*Establecer las dimensiones de la tarjeta ANCHO*/
+    height: 612px;  /*Ver las dimensiones de la tarjeta ALTURA*/
+    border-radius: 12px; /*Establecer las dimensiones de la tarjeta REDONDEOS DE ESQUINA*/
+    overflow:hidden; /*Oculta todo lo que salga de nuestro bordes ya establecidos*/
+    margin: 68px auto; /*Estableces los margenes de los costados de nyesta targeta con la pantalla 1-vertical 2-horizontal*/
+}
+.card__first-section__boton{
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 30px 30px 30px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    border: 1px solid red;
+}
+.card__first-section__boton__image{
+    width: 100%; /*Establecer las dimensiones de la tarjeta ANCHO*/
+    border-radius: auto;
+    overflow:hidden;
+    border-radius: 5px;
+}
+.card__first-section__boton__super{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow:hidden;
+    background-color: #87CEEB; /* Código de color celeste */
+    opacity: 0.7;
+    
+}
+.card__first-section__boton__image2{
+    position: absolute;
+}
+
+.card__first-section__boton:active{
+    background-color: black;
+}
+.card__second-section__Titulo{
+    color: var(--White);
+    font-size: 1.4em; /*em=toma lo del body su fonzise y lo puede multiplicar o dividir*/
+    letter-spacing: 0.5px ;/*espaciado entre letras*/
+    margin: 4px 24px 0px 30px;
+}
+.card__second-section__Descripcion{
+    color: var(--Soft-blue);
+    font-size: 1.em; /*em=toma lo del body su fonzise y lo puede multiplicar o dividir*/
+    letter-spacing: 0.5px ;/*espaciado entre letras*/
+    margin: 18px 24px 8px 30px;
+    line-height: 24px; /*espacio entre dos lineas*/
+}
+.card__second-section__Precio{
+    display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+    gap:105px; /*separar horizontalmente los dos espacios de arriba*/
+    color: var(--Soft-blue);
+    border: 1px solid red;
+    align-items: center; /*el contenido del costado se pone al centro con respecto al contenedor*/
+    margin: 18px 24px 8px 30px;
+}
+.Total{
+    display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+    gap:8px;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.card__second-section__Precio__LogoTotal{
+    width: 12%; /*Establecer las dimensiones de la tarjeta ANCHO*/
+}
+.card__second-section__Precio__Total{
+    font-size: 1em;
+    color:var(--Cyan);
+}
+.Tiempo{
+    display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+    gap:8px;
+    border: 1px solid red;
+    align-items: center;
+}
+hr{
+    margin: 18px 24px 8px 30px;
+    border: none;
+    height: 1px;
+    background-color: hsl(215, 51%, 70%);
+}
+.card__second-section___Usuario{
+    display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+    gap:12px; /*separar horizontalmente los dos espacios de arriba*/
+    color: var(--Soft-blue);
+    border: 1px solid red;
+    align-items: center; /*el contenido del costado se pone al centro con respecto al contenedor*/
+    margin: 18px 24px 8px 30px;
+
+}
+.card__second-section__Usuario__Foto{
+    width: 18%; /*Establecer las dimensiones de la tarjeta ANCHO*/
+    margin: 1px 1px 1px 1px;
+    overflow:hidden;
+    border-radius: 50px;
+    border: 1px solid white;
+    overflow:hidden;
+    /*margin-rigth:12px; para poder separar un icono de la letra */
+}
+.card__second-section__Usuario__Descripcion2{
+    color: white;
+}
+@media(min-width:375px){
+    :root{
+        --Soft-blue: hsl(215, 51%, 70%);
+        --Cyan: hsl(178, 100%, 50%);
+        --Very-dark-blue: hsl(217, 54%, 11%);
+        --Very-dark-blue2: hsl(216, 50%, 16%);
+        --Very-dark-blue3: hsl(214, 29%, 36%);
+        --White: hsl(0, 0%, 100%);
+    }
+    *{/*Variable mundial para resetear nuestro front*/
+        margin:0;
+        padding:0;
+        box-sizing: border-box; /*Con esto mantenemos nuestras dimensiones*/
+    }
+    body{
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+        background-color: var(--Very-dark-blue);
+    }
+    .card{
+        border: 1px solid red; /*Ver las dimensiones de la tarjeta*/
+        background-color: var(--Very-dark-blue2);
+        width:344px; /*Establecer las dimensiones de la tarjeta ANCHO*/
+        height: 612px;  /*Ver las dimensiones de la tarjeta ALTURA*/
+        border-radius: 12px; /*Establecer las dimensiones de la tarjeta REDONDEOS DE ESQUINA*/
+        overflow:hidden; /*Oculta todo lo que salga de nuestro bordes ya establecidos*/
+        margin: 100px auto; /*Estableces los margenes de los costados de nyesta targeta con la pantalla 1-vertical 2-horizontal*/
+        
+    }
+    .card__first-section__image{
+        width: 80%; /*Establecer las dimensiones de la tarjeta ANCHO*/
+        margin: 30px 30px 30px 30px;
+        border-radius: 12px;
+        overflow:hidden;
+    }
+    .card__second-section__Titulo{
+        color: var(--White);
+        font-size: 1.4em; /*em=toma lo del body su fonzise y lo puede multiplicar o dividir*/
+        letter-spacing: 0.5px ;/*espaciado entre letras*/
+        margin: 4px 24px 0px 30px;
+    }
+    .card__second-section__Descripcion{
+        color: var(--Soft-blue);
+        font-size: 1.em; /*em=toma lo del body su fonzise y lo puede multiplicar o dividir*/
+        letter-spacing: 0.5px ;/*espaciado entre letras*/
+        margin: 18px 24px 8px 30px;
+        line-height: 24px; /*espacio entre dos lineas*/
+    }
+    .card__second-section__Precio{
+        display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+        gap:105px; /*separar horizontalmente los dos espacios de arriba*/
+        color: var(--Soft-blue);
+        border: 1px solid red;
+        align-items: center; /*el contenido del costado se pone al centro con respecto al contenedor*/
+        margin: 18px 24px 8px 30px;
+    }
+    .Total{
+        display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+        gap:8px;
+        border: 1px solid red;
+        align-items: center;
+    }
+    
+    .card__second-section__Precio__LogoTotal{
+        width: 12%; /*Establecer las dimensiones de la tarjeta ANCHO*/
+    }
+    .card__second-section__Precio__Total{
+        font-size: 1em;
+        color:var(--Cyan);
+    }
+    .Tiempo{
+        display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+        gap:8px;
+        border: 1px solid red;
+        align-items: center;
+    }
+    hr{
+        margin: 18px 24px 8px 30px;
+        border: none;
+        height: 1px;
+        background-color: hsl(215, 51%, 70%);
+    }
+    .card__second-section___Usuario{
+        display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+        gap:12px; /*separar horizontalmente los dos espacios de arriba*/
+        color: var(--Soft-blue);
+        border: 1px solid red;
+        align-items: center; /*el contenido del costado se pone al centro con respecto al contenedor*/
+        margin: 18px 24px 8px 30px;
+    
+    }
+    .card__second-section__Usuario__Foto{
+        width: 18%; /*Establecer las dimensiones de la tarjeta ANCHO*/
+        margin: 1px 1px 1px 1px;
+        overflow:hidden;
+        border-radius: 50px;
+        border: 1px solid white;
+        overflow:hidden;
+        /*margin-rigth:12px; para poder separar un icono de la letra */
+    }
+    .card__second-section__Usuario__Descripcion2{
+        color: white;
+    }
+}
