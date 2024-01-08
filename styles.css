@@ -112,3 +112,20 @@ hr{
 .card__second-section__Usuario__Descripcion2{
     color: white;
 }
+@media (min-width:900px){
+    .card{
+        width: 354px;
+        height: 620px;
+    }
+    .card__first-section{
+        width: 315px;
+        height: 315px;
+    }
+    .card__second-section__Precio{
+        display:flex; /*ni bien pongas esto dos cuadros verticales se podran horizontales por defecto*/
+        gap:120px; /*separar horizontalmente los dos espacios de arriba*/
+        color: var(--Soft-blue);
+        align-items: center; /*el contenido del costado se pone al centro con respecto al contenedor*/
+        margin: 18px 24px 8px 30px;
+    }
+}
